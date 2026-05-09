@@ -498,7 +498,11 @@ class RpowClient {
           "accept": "application/json, text/plain, */*",
           "origin": this.siteOrigin,
           "referer": `${this.siteOrigin}/`,
-          "user-agent": "rpow-cli/1.0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+          "accept-language": "en-US,en;q=0.9",
+          "sec-fetch-site": "same-origin",
+          "sec-fetch-mode": "cors",
+          "sec-fetch-dest": "empty",
         };
         const cookies = cookieHeader(this.state.cookies);
         if (cookies) headers.cookie = cookies;
